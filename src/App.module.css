@@ -1,0 +1,164 @@
+.page {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: 60px;
+}
+
+.blob1, .blob2, .blob3 {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.blob1 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, #f8c8e0, #f0a8c8);
+  top: -120px; left: -150px;
+}
+
+.blob2 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, #d8c8f8, #b8a0e8);
+  top: 30%; right: -100px;
+}
+
+.blob3 {
+  width: 350px; height: 350px;
+  background: radial-gradient(circle, #f9e8b0, #f0c870);
+  bottom: 5%; left: 10%;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 20px 28px;
+}
+
+.tagline {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c080a0;
+  margin: 0 0 8px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 400;
+  color: #3a2030;
+  margin: 0 0 10px;
+  line-height: 1.1;
+}
+
+.title em {
+  font-style: italic;
+  color: #c05080;
+}
+
+.subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #a07890;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.filterRow {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 24px 20px 8px;
+}
+
+.pill {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 8px 22px;
+  border-radius: 30px;
+  border: 1.5px solid #e0b0c8;
+  background: rgba(255, 255, 255, 0.7);
+  color: #a06080;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pill:hover {
+  background: #fde8f0;
+  border-color: #c07090;
+  color: #7a3050;
+}
+
+.pillActive {
+  background: linear-gradient(135deg, #f0a0c0, #d060a0);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(200, 80, 140, 0.3);
+}
+
+.pillActive:hover {
+  background: linear-gradient(135deg, #e890b0, #c04090);
+  color: #fff;
+}
+
+.count {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: #b08098;
+  margin: 18px 0 0;
+}
+
+.count strong {
+  color: #7a3050;
+}
+
+.count em {
+  color: #c06090;
+  font-style: normal;
+}
+
+.grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 24px auto 0;
+  padding: 0 24px;
+}
+
+.footer {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin-top: 60px;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  color: #c090a8;
+  font-weight: 300;
+}
+
+.footer code {
+  font-size: 11px;
+  background: #fde8f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #a05070;
+}

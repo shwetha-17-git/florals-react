@@ -1,0 +1,29 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fdf5f8;
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(248, 200, 224, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(216, 200, 248, 0.25) 0%, transparent 50%);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
